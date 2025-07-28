@@ -1,0 +1,74 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* === HEADER === */
+header {
+  background-color: black;
+  padding: 20px 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 160px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* === BANNER / HERO SECTION === */
+main > section:first-of-type {
+  background-image: url('./images/Object.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 80px;
+  text-align: center;
+}
+
+main > section:first-of-type h1 {
+  font-size: 120px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+main > section:first-of-type span {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+main > section:first-of-type button {
+  margin-top: 40px;
+  padding: 14px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: #c271ff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
