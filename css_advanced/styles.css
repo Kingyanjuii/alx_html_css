@@ -40,6 +40,86 @@ nav ul li a {
   font-size: 14px;
 }
 
+/* === HERO / BANNER SECTION === */
+main > section:first-of-type {
+  background-image: url('./images/Object.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 80px;
+  text-align: center;
+  color: white;
+}
+
+main > section:first-of-type h1 {
+  font-size: 120px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+main > section:first-of-type span {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+main > section:first-of-type button {
+  margin-top: 30px;
+  padding: 14px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: #c271ff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+main > section:first-of-type h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 60px 0 40px 0;
+  color: white;
+}
+
+main > section:first-of-type h2 .highlight {
+  font-weight: 700;
+  color: #c271ff;
+}
+
+/* === TUTOR PROFILES (under Hero) === */
+main > section:first-of-type > div:nth-of-type(2) > div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+main > section:first-of-type > div:nth-of-type(2) > div > div {
+  text-align: center;
+  color: white;
+  max-width: 150px;
+}
+
+main > section:first-of-type > div:nth-of-type(2) img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+main > section:first-of-type > div:nth-of-type(2) h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+main > section:first-of-type > div:nth-of-type(2) p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
 /* === BANNER / HERO SECTION === */
 main > section:first-of-type {
   background-image: url('./images/Object.png');
