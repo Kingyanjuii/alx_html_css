@@ -107,3 +107,212 @@ main > section:nth-of-type(2) p {
   font-weight: 400;
   opacity: 0.8;
 }
+
+/* === MOST POPULAR TUTORIALS SECTION === */
+main > section:nth-of-type(3) {
+  background-color: #f5f5f5;
+  padding: 80px 60px;
+  color: black;
+}
+
+main > section:nth-of-type(3) h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+main > section:nth-of-type(3) > div {
+  display: inline-block;
+  width: 22%;
+  margin: 0 1%;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  vertical-align: top;
+}
+
+main > section:nth-of-type(3) > div img:first-of-type {
+  width: 100%;
+  display: block;
+}
+
+main > section:nth-of-type(3) h3 {
+  font-size: 18px;
+  margin: 16px;
+}
+
+main > section:nth-of-type(3) p {
+  font-size: 14px;
+  margin: 0 16px 16px 16px;
+  color: #333;
+}
+
+main > section:nth-of-type(3) > div > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px 8px 16px;
+}
+
+main > section:nth-of-type(3) > div > div:nth-of-type(1) img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+main > section:nth-of-type(3) > div > div:nth-of-type(1) h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+main > section:nth-of-type(3) > div > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px 16px 16px;
+}
+
+main > section:nth-of-type(3) i.fa-star {
+  color: #c271ff;
+  margin-right: 2px;
+}
+
+main > section:nth-of-type(3) > div > p:last-of-type {
+  font-size: 12px;
+  text-align: right;
+  margin: 0 16px 16px 16px;
+  color: #888;
+}
+
+/* === MEMBERSHIP SECTION === */
+main > section:nth-of-type(4) {
+  background-color: #071629;
+  padding: 80px 60px;
+  color: white;
+  text-align: center;
+}
+
+main > section:nth-of-type(4) h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+main > section:nth-of-type(4) > div {
+  display: inline-block;
+  width: 22%;
+  margin: 0 1%;
+  vertical-align: top;
+}
+
+main > section:nth-of-type(4) img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+main > section:nth-of-type(4) h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+main > section:nth-of-type(4) p {
+  font-size: 14px;
+  color: #d8d8d8;
+  padding: 0 10px;
+}
+
+main > section:nth-of-type(4) button {
+  margin-top: 50px;
+  padding: 14px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: #c271ff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+/* === FAQ SECTION === */
+main > section:nth-of-type(5) {
+  background-color: white;
+  color: #071629;
+  padding: 80px 60px;
+}
+
+main > section:nth-of-type(5) h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+main > section:nth-of-type(5) > div {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+main > section:nth-of-type(5) > div > div {
+  width: 48%;
+}
+
+main > section:nth-of-type(5) h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+main > section:nth-of-type(5) div div div + div {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+/* === FOOTER SECTION === */
+footer {
+  background-color: #071629;
+  color: white;
+  padding: 60px 80px 30px 80px;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+
+footer section img {
+  width: 160px;
+}
+
+footer section div i {
+  font-size: 20px;
+  margin: 0 10px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+footer section div i:hover {
+  transform: scale(1.1);
+  color: #c271ff;
+}
+
+footer section p {
+  font-size: 14px;
+  opacity: 0.7;
+  text-align: center;
+}
