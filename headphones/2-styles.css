@@ -1,0 +1,314 @@
+/* Load local Source Sans Pro fonts */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+/* Load Holberton School Icons */
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('holberton_school-icon.eot');
+  src: url('holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+       url('holberton_school-icon.woff') format('woff'),
+       url('holberton_school-icon.ttf') format('truetype'),
+       url('holberton_school-icon.svg#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --text-color: white;
+  --button-bg: #FF6565;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Global font setting */
+body {
+  font-family: var(--font-family);
+}
+
+/* Layout container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header background */
+.header {
+  background-image: url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color);
+  min-height: 100vh;
+  display: block;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.menu-icon {
+  display: none;
+  height: 25px;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active {
+  color: var(--button-bg);
+}
+
+/* Hero section */
+.hero {
+  margin-top: 372px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.hero button {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.hero button:hover,
+.hero button:active {
+  opacity: 0.9;
+}
+
+/* Hero description */
+.hero-description {
+  margin-top: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* What we do section */
+.what-we-do {
+  background-color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FF6565;
+}
+
+.what-we-do-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  max-width: 800px;
+  margin: 30px auto 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Service icons layout */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.service {
+  text-align: center;
+  max-width: 200px;
+  padding: 20px;
+}
+
+.service span {
+  font-family: 'holberton_school-icon';
+  font-size: 60px;
+  color: #FF6565; /* Icon color */
+  display: block;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #071629;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero button {
+    width: 100%;
+  }
+}
+
+.our-results {
+  background-image: url("images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+.results-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.results-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.pentagon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pentagon {
+  position: relative;
+  width: 150px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.pentagon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pentagon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.pentagon-text h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.pentagon-text p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Responsive: stack icons on smaller screens */
+@media (max-width: 768px) {
+  .pentagon-wrapper {
+    justify-content: center;
+  }
+
+  .pentagon {
+    width: 100px;
+  }
+
+  .pentagon-text h3 {
+    font-size: 28px;
+  }
+
+  .pentagon-text p {
+    font-size: 12px;
+  }
+}
